@@ -326,6 +326,7 @@ function modalHandler() {
 }
 modalHandler();
 
+
 function updateModal(userObj) {
   modalFullnameEl.innerText = `${userObj.firstName} ${userObj.lastName}`;
   modalJobEl.innerText = userObj.job;
@@ -346,17 +347,18 @@ function showModal() {
   backdropEl.classList.remove("hidden");
   modalEl.classList.remove("hidden");
 }
-
 function getUserById(userId) {
   const array = users.filter((user) => user.id === userId);
   return array[0];
 }
 
+
+
+
 //! HELPER FUNCTIONS (UTIL)
 function seperator(x) {
   return Intl.NumberFormat("en-US").format(x);
 }
-
 function randomGenerator(min, max) {
   const random = min + Math.random() * (max - min);
   const result = Math.round(random);
