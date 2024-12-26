@@ -191,16 +191,6 @@ function generateUsers(userArray) {
         : ""; 
 
 
-
-
-
-
-
-
-
-
-        
-
     const topProjectLabel =
       user.id === topUsers.byProjects
         ? `<span class="dark:bg-gray-700 dark:text-white bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">
